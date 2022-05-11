@@ -16,9 +16,9 @@
 <body>
     <h2 id="header">Pomodoro Clock</h2>
     <div id="seg">
-        <a class="waves-effect waves-light btn">Pomodoro</a>
-        <a class="waves-effect waves-light btn">Tiny Break</a>
-        <a class="waves-effect waves-light btn">Large Break</a>
+        <button onclick="timer()" class="waves-effect waves-light btn">Pomodoro</button>
+        <button onclick="tBtimer()" class="waves-effect waves-light btn">Tiny Break</button>
+        <button onclick="lBtimer()"class="waves-effect waves-light btn">Large Break</button>
     </div>
     <div id="container">
         <div class="count">
@@ -26,7 +26,6 @@
         </div>
         <h4 id="Warning"></h4>
         <div class="flex-parent jc-center">
-            <button onclick="timer()" class="btn waves-effect btn-large waves-light">Start</button>
             <button onclick="stopTimer()" class="btn waves-effect btn-large waves-light">Stop</button>
         </div>
     </div>
