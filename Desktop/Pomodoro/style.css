@@ -1,0 +1,43 @@
+body{
+margin: auto;
+width: 60%;
+}
+.count{
+border: 2px solid #f3abab;
+background-color: #f3abab;
+height: 250px;
+border-radius:50%;
+width: 250px;
+margin-left: 260px;
+margin-top: 50px;
+}
+
+#display{
+    margin-top: 30%;
+    text-align: center;
+
+}
+.flex-parent {
+    display: flex;
+  }
+  
+  .jc-center {
+    justify-content: center;
+  }
+  #seg{
+    justify-content: center;
+    display: flex;
+    margin-top: 30px;
+  }
+  button{
+      width: 130px;
+  }
+
+#header{
+    justify-content: center;
+    display: flex;
+  }
+  #Warning{
+    justify-content: center;
+    display: flex; 
+  }
