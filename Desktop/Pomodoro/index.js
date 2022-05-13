@@ -12,6 +12,7 @@ let Timer = () => {
   if (actualMins == 0) {
     document.getElementById("Warning").innerHTML =
       "Its time to start timer again :)";
+    stopRotatingCircle();
   }
 
   document.getElementById("display").innerHTML = actualMins + " : " + actualSec;
@@ -31,6 +32,8 @@ function stopTimer() {
   clearInterval(func);
   clearInterval(func2);
   clearInterval(func3);
+  stopRotatingCircle();
+  alert("Press the same clock type button to resume");
 }
 
 //Tiny Break Logic
@@ -47,6 +50,7 @@ let tBreak = () => {
   if (tMins == 0) {
     document.getElementById("Warning").innerHTML =
       "Its time to start timer again :)";
+    stopRotatingCircle();
   }
 
   document.getElementById("display").innerHTML = tMins + " : " + tSec;
@@ -76,6 +80,7 @@ let lBreak = () => {
   if (lMins == 0) {
     document.getElementById("Warning").innerHTML =
       "Its time to start timer again :)";
+    stopRotatingCircle();
   }
 
   document.getElementById("display").innerHTML = lMins + " : " + lSec;
@@ -88,4 +93,26 @@ function lBtimer() {
   clearInterval(func);
   clearInterval(func2);
   func3 = setInterval(lBreak, 1000);
+}
+
+function rotatingCircle(degree) {
+  var test = anime({
+    targets: [document.getElementsByTagName("svg")[0]],
+    rotate: degree,
+    duration: 2000,
+    loop: true,
+    elasticity: 0,
+    easing: "linear",
+  });
+}
+
+function stopRotatingCircle() {
+  var test = anime({
+    targets: [document.getElementsByTagName("svg")[0]],
+    duration: 80000,
+    rotate: 0,
+    loop: true,
+    elasticity: 0,
+    easing: "linear",
+  });
 }

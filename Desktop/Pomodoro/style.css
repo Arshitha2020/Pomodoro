@@ -1,20 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins&display=swap');
+html{
+    font-family:'Poppins';
+    background-color: #333333;
+    
+}
+#header, #Warning{
+  color: #01786c;
+}
 body{
 margin: auto;
-width: 60%;
+height: 100vh;
+width: 100vw;
+background: rgb(194, 194, 194);
+overflow: hidden;
+
+}
+#container{
+
+  /* center the elements inside the div */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .count{
-border: 2px solid #f3abab;
-background-color: #f3abab;
-height: 250px;
-border-radius:50%;
-width: 250px;
-margin-left: 260px;
-margin-top: 50px;
+   height: 200px;
+   width: 200px;
+   margin-left: 543px;
+   margin-top: 17px;
+   border-radius: 100px;
+   background: rgb(194, 194, 194);
+   background: linear-gradient(145deg, #e0e0e0, #8d8d8d71);
+   box-shadow: 20px 20px 60px #6969698f, -20px -20px 60px #e0e0e0b0
 }
+#hGlass{
 
+    height: 140px;
+    border-radius:50%;
+    width: 140px;
+    margin-left: 572px;
+    margin-top: 30px;
+    }
 #display{
-    margin-top: 30%;
+    margin-top: 34%;
     text-align: center;
+    font-size: 58px;
 
 }
 .flex-parent {
@@ -27,17 +56,21 @@ margin-top: 50px;
   #seg{
     justify-content: center;
     display: flex;
-    margin-top: 30px;
+    margin-top: 20px;
   }
   button{
       width: 130px;
+      box-shadow:  20px 20px 60px #bebebe,
+      -20px -20px 60px #ffffff;
   }
 
 #header{
     justify-content: center;
     display: flex;
+    margin-top: 20px;
   }
   #Warning{
     justify-content: center;
     display: flex; 
   }
+  
