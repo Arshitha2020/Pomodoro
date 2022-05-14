@@ -1,21 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins&display=swap');
 html{
     font-family:'Poppins';
-    background-color: #333333;
+    background-color: rgb(194, 194, 194);;
     
 }
+
 #header, #Warning{
   color: #01786c;
 }
 body{
 margin: auto;
-height: 100vh;
-width: 100vw;
 background: rgb(194, 194, 194);
 overflow: hidden;
 
 }
-#container{
+#Container{
 
   /* center the elements inside the div */
   display: flex;
@@ -25,21 +24,28 @@ overflow: hidden;
 .count{
    height: 200px;
    width: 200px;
-   margin-left: 543px;
-   margin-top: 17px;
+   /* margin-left: 543px;*/
+   margin-top: 30px; 
    border-radius: 100px;
    background: rgb(194, 194, 194);
    background: linear-gradient(145deg, #e0e0e0, #8d8d8d71);
    box-shadow: 20px 20px 60px #6969698f, -20px -20px 60px #e0e0e0b0
 }
+
 #hGlass{
 
     height: 140px;
     border-radius:50%;
     width: 140px;
-    margin-left: 572px;
-    margin-top: 30px;
+    margin-left: 92px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle; 
+    margin-top: 15px;
+    margin-bottom: 8px;
+	 
     }
+
 #display{
     margin-top: 34%;
     text-align: center;
@@ -48,6 +54,7 @@ overflow: hidden;
 }
 .flex-parent {
     display: flex;
+    margin-left: -15px;
   }
   
   .jc-center {

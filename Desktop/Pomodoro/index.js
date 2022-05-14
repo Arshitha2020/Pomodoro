@@ -33,7 +33,8 @@ function stopTimer() {
   clearInterval(func2);
   clearInterval(func3);
   stopRotatingCircle();
-  alert("Press the same clock type button to resume");
+  alert("Press the same clock type button to");
+  alert("Please reload the page before selecting other clock type");
 }
 
 //Tiny Break Logic
@@ -63,6 +64,7 @@ function tBtimer() {
   clearInterval(func);
   clearInterval(func3);
   func2 = setInterval(tBreak, 1000);
+  alert("Please reload the page before selecting other clock type");
 }
 
 //Long Break Logic
